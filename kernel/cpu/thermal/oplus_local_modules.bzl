@@ -12,7 +12,6 @@ def define_oplus_local_modules():
         ]),
         includes = ["."],
         copts = select({
-            "//build/kernel/kleaf:kocov_is_true": ["-fprofile-arcs", "-ftest-coverage"],
             "//conditions:default": [],
         }),
     )
@@ -25,7 +24,6 @@ def define_oplus_local_modules():
         ]),
         includes = ["."],
         copts = select({
-            "//build/kernel/kleaf:kocov_is_true": ["-fprofile-arcs", "-ftest-coverage"],
             "//conditions:default": [],
         }),
     )
@@ -41,7 +39,6 @@ def define_oplus_local_modules():
         ],
         includes = ["."],
         copts = select({
-            "//build/kernel/kleaf:kocov_is_true": ["-fprofile-arcs", "-ftest-coverage"],
             "//conditions:default": [],
         }),
     )
